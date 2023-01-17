@@ -1,6 +1,43 @@
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
+let burgerMenu = document.getElementById("burger-menu");
+let overlay = document.getElementById("menu");
+let menuBackground = document.querySelector("#menu");
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
+  random_bg_color();
+});
+
+
+function random_bg_color() {
+    let x = Math.floor(Math.random() * 256);
+    let y = Math.floor(Math.random() * 256);
+    let z = Math.floor(Math.random() * 256);
+    let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    menuBackground.style.backgroundColor = bgColor
+    }
+
+
+
+
+let foodFish = document.getElementById("fishBlue");
+let foodCooked = document.getElementById("fishCooked");
+foodFish.addEventListener("click", ()=> {
+  foodFish.style.display = "none";
+  foodCooked.style.display = "block";
+})
+foodCooked.addEventListener("click", () => {
+  foodCooked.style.display = "none";
+  foodFish.style.display = "block";
+});
+
+
+let foodChicken = document.getElementById("chicken");
+let foodCookedChicken = document.getElementById("chickenCooked");
+foodChicken.addEventListener("click", () => {
+  foodChicken.style.display = "none";
+  foodCookedChicken.style.display = "block";
+});
+foodCookedChicken.addEventListener("click", () => {
+  foodCookedChicken.style.display = "none";
+  foodChicken.style.display = "block";
 });
