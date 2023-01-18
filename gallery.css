@@ -1,4 +1,27 @@
 /* page------gallery------- */
+.gallery-body {
+  background-image: url(/images/wrap-snack-food-svgrepo-com.svg);
+  background-size: cover;
+  background-color: var(--yellow);
+}
+
+.title-gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-450%);
+}
+
+.scroll-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-500%, -750%);
+}
+
+
+
+/* -------pictures--------- */
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px;
@@ -9,6 +32,7 @@
   height: 1px;
 }
 .external {
+  margin-top: 10%;
   overflow: hidden;
   height: 100vh;
 }
@@ -27,6 +51,7 @@
   perspective: 1px;
 	transform-style: preserve-3d;
   padding-bottom: 10rem;
+  margin-top: -5%;
 }
 .img-wrapper {
   transform: rotate(90deg);
@@ -84,11 +109,6 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-p {
-  margin: 0;
-}
 
-.scroll-info {
-  display: flex;
-  align-items: center;
-}
+
+
