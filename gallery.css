@@ -5,20 +5,37 @@
   background-color: var(--yellow);
 }
 
-.title-gallery {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-450%);
-}
+
 
 .scroll-info {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-500%, -750%);
+  transform: translate(-400%, -750%);
+  font-size: 20px;
 }
 
+.fa-arrow-down {
+  animation: up-down 1s linear infinite ;
+}
+
+ @keyframes up-down {
+
+    0%{
+        transform: translateY(0);
+        
+    }
+
+    50%{
+      transform: translateY(2px);
+    }
+
+    100%{
+        transform: translateY(0);
+       
+    }
+
+}
 
 
 /* -------pictures--------- */
@@ -69,7 +86,7 @@
 }
 .img-wrapper:hover {
  min-height: 55vh;
- transform: rotate(90deg) translateZ(.1px) scale(1.1) translateX(0px) translateY(-3vh);
+ transform: rotate(90deg) translateZ(.1px) scale(1.1) translateX(5%) translateY(-3vh);
 }
 
 .slower {
