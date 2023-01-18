@@ -286,8 +286,6 @@ nav{
   font-size: 40px;
   color: #2FC4B2;
   transition: all .4s ease-in-out;
-  
-  
 }
 
 .top-contact-links:hover{
@@ -732,12 +730,42 @@ footer .copyright p a:hover {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  footer .copyright p,
-  footer .copyright .col-md-6:last-child p {
+
+
+
+@media screen and (max-width: 820px){
+    .top-contact-links{
+      font-size: 30px;
+    }
+
+    .top-contact {
+      right: 5%;
+      top: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 489px){
+
+  .top-contact-links{
+      font-size: 25px;
+    }
+
+    .top-contact {
+      right: 5%;
+      top: 40px;
+      gap:.5rem;
+    }
+
+    svg {
+      width: 200px;
+      height: 200px;
+      
+    }
+
+  footer{
     margin: 5px 0;
     text-align: center;
   }
 }
-
-

@@ -3,6 +3,7 @@
   background-image: url(/images/wrap-snack-food-svgrepo-com.svg);
   background-size: cover;
   background-color: var(--yellow);
+  background-position: center;
 }
 
 
@@ -126,6 +127,21 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
+@media screen and (max-width: 820px){
 
+    .scroll-info {
+      transform: translate(-120%, -750%);
+      font-size: 35px;
+    }
 
+}
 
+@media screen and (max-width: 489px){
+    .horizontal-scroll-wrapper {
+      margin-top: 10%;
+    }
+    .scroll-info {
+      transform: translate(-120%, -750%);
+      font-size: 35px;
+    }
+}
