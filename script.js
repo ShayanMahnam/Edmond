@@ -63,7 +63,7 @@ function scrollFunction() {
 
 let edPic = document.getElementById("edPic")
 let motto = document.getElementById("motto");
-const mottoArray = ["blaah blaah blaah", "kooniam man", "khoob koon midam", 'koon midam be hame', 'poole shayan ro bayad berizam'];
+const mottoArray = ["First Motto", "Second Motto", "Third Motto", 'N Motto'];
   
 // edPic.addEventListener("click", ()=>{
 //   // let index = Math.floor(Math.random() * (mottoArray.length - 1))
