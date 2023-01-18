@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <title>World Food</title>
 </head>
@@ -47,7 +49,7 @@
             </div>
         </nav>
 
-        <div class="logo-container">
+        <div id="logo" class="logo-container">
             <svg viewBox="0 0 960 300">
                 <symbol id="s-text">
                 <text text-anchor="middle" x="50%" y="80%">World Food</text>
@@ -75,7 +77,7 @@
             <div class="img-wrapper-main one-back"></div>
         </section>
 
-        <section class="container-wrapper one-container">
+        <section class="container-wrapper one-container shadow-container">
             <div class="text-wrapper text-left">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo eius ratione, quae vero iste facilis magni animi, enim ullam ex officia voluptatibus molestiae suscipit harum ipsam laboriosam a tenetur.</p>
             </div>
@@ -92,7 +94,7 @@
             <div class="img-wrapper-main two-back"></div>
         </section>
 
-        <section class="container-wrapper two-container">
+        <section class="container-wrapper two-container shadow-container">
             <div class="text-wrapper text-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo eius ratione, quae vero iste facilis magni animi, enim ullam ex officia voluptatibus molestiae suscipit harum ipsam laboriosam a tenetur.</p>
             </div>
@@ -104,10 +106,73 @@
                 </div>
             </div>
         </section>
+
+        <div id="up-btn" class="up-btn">
+            <a href="#logo"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
     </main>
 
     <footer>
-
+        
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-link">
+              <h3>Service Area</h3>
+              <a href="">Lorem ipsum</a>
+              <a href="">tempus posuere </a>
+              <a href="">velit id accumsan</a>
+              <a href="">ut porttitor</a>
+              <a href="">Nam pretium</a>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-contact">
+              <h3>Get In Touch</h3>
+              <p><i class="fa fa-map-marker-alt"></i>123 Street, London, UK</p>
+              <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+              <p><i class="fa fa-envelope"></i>info@example.com</p>
+              <div class="footer-social">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-menu">
+    <div class="f-menu">
+      <a href="">Terms of use</a>
+      <a href="">Privacy policy</a>
+      <a href="">Cookies</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 <a href="#">World Food</a>, All Right Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p>Designed By <a href="https://htmlcodex.com">Shayan Mahnam</a></p>
+      </div>
+    </div>
+  </div>
     </footer>
     <script src="script.js"></script>
 </body>

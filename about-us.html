@@ -4,26 +4,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
     <title>World Food</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a class="nav-items" href="index.html">Home</a></li>
-                <li><a class="nav-items" href="gallery.html">Gallery</a></li>
-                <li><a class="nav-items" href="about-us.html">About Us</a></li>
-            </ul>
+            <div id="burger-menu">
+                <span></span>
+            </div>
+
+            <div id="menu">
+                
+                <ul class="drop-animation">
+                    <li><img class="svg-img one" src="/images/wrap-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img two" src="/images/taco-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img three" src="/images/taco-snack-food-svgrepo-com.svg" alt=""></li>
+                    
+                    <li><img class="svg-img four" src="/images/wrap-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img one" src="/images/wrap-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img two" src="/images/taco-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img three" src="/images/taco-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img four" src="/images/wrap-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img one" src="/images/wrap-snack-food-svgrepo-com.svg" alt=""></li>
+
+                    <li><img class="svg-img two" src="/images/taco-svgrepo-com.svg" alt=""></li>
+                </ul>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
         </nav>
+
+        <div id="logo" class="logo-container">
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">World Food</text>
+                </symbol>
+
+                <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
+        </div>
+
+        <ul class="top-contact">
+            <li><a class="top-contact-links" href="#"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a class="top-contact-links"  href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+
     </header>
 
     <main>
+        
+<div class="flex items-center min-h-screen mt-20">
+  <div class="container mx-auto">
+    <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="text-center">
+        <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+          Contact Us
+        </h1>
+        <p class="text-gray-400 dark:text-gray-400">
+          Fill up the form below to send us a message.
+        </p>
+      </div>
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="074 12345678" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
 
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
 
     <footer>
-
+        
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="footer-about">
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-link">
+              <h3>Service Area</h3>
+              <a href="">Lorem ipsum</a>
+              <a href="">tempus posuere </a>
+              <a href="">velit id accumsan</a>
+              <a href="">ut porttitor</a>
+              <a href="">Nam pretium</a>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="footer-contact">
+              <h3>Get In Touch</h3>
+              <p><i class="fa fa-map-marker-alt"></i>123 Street, London, UK</p>
+              <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+              <p><i class="fa fa-envelope"></i>info@example.com</p>
+              <div class="footer-social">
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-menu">
+    <div class="f-menu">
+      <a href="">Terms of use</a>
+      <a href="">Privacy policy</a>
+      <a href="">Cookies</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 <a href="#">World Food</a>, All Right Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <p>Designed By <a href="https://htmlcodex.com">Shayan Mahnam</a></p>
+      </div>
+    </div>
+  </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
