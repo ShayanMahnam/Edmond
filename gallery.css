@@ -141,7 +141,7 @@
       margin-top: 10%;
     }
     .scroll-info {
-      transform: translate(-120%, -750%);
-      font-size: 35px;
+      transform: translate(-100%, -750%);
+      font-size: 25px;
     }
 }
