@@ -717,8 +717,20 @@ footer .footer-contact h3{
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #0085ff;
 }
+
+footer .footer-about h3{
+  color: #AB46D2;
+}
+
+footer .footer-link h3{
+  color: #FFAB76;
+}
+
+footer .footer-contact h3{
+  color: #77E4D4;
+}
+
 
 footer .footer-link a {
   display: block;
@@ -736,10 +748,6 @@ footer .footer-link a::before {
   margin-right: 10px;
 }
 
-footer .footer-link a:hover {
-  color: #0085ff;
-  letter-spacing: 1px;
-}
 
 footer .footer-contact p i {
   width: 25px;
@@ -757,7 +765,7 @@ footer .footer-social a {
 footer .footer-social a i {
   margin-right: 15px;
   font-size: 18px;
-  color: #0085ff;
+  color: #36AE7C;
 }
 
 footer .footer-social a:last-child i {
@@ -765,7 +773,7 @@ footer .footer-social a:last-child i {
 }
 
 footer .footer-social a:hover i {
-  color: #dddddd;
+  color: #F9D923;
 }
 
 footer .footer-menu .f-menu {
@@ -786,7 +794,7 @@ footer .footer-menu .f-menu a {
 }
 
 footer .footer-menu .f-menu a:hover {
-  color: #0085ff;
+  color: #EB5353;
 }
 
 footer .footer-menu .f-menu a:last-child {
@@ -809,7 +817,7 @@ footer .copyright .col-md-6:last-child p {
 }
 
 footer .copyright p a {
-  color: #0085ff;
+  color: #EB5353;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -832,6 +840,11 @@ footer .copyright p a:hover {
       top: 40px;
     }
 
+    .text-wrapper {
+      width: 450px;
+      overflow: scroll;
+      padding: 3rem;
+    }
 
     .img-wrapper-main{
       background-attachment: scroll;
@@ -869,7 +882,7 @@ footer .copyright p a:hover {
       width: 350px;
       height: 350px;
     }
-    .text-wrapper, .thought {
+    .text-wrapper {
       width: 350px;
       overflow: scroll;
       padding: 2rem;
