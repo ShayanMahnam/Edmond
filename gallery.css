@@ -12,7 +12,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-400%, -750%);
+  transform: translate(-400%, -600%);
   font-size: 20px;
 }
 
@@ -84,6 +84,8 @@
 }
 .img-wrapper  img {
   border: 10px solid var(--gray-light);
+  width: 100%;
+  height: auto;
 }
 .img-wrapper:hover {
  min-height: 55vh;

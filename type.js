@@ -4,9 +4,9 @@ var typed = new Typed(".input", {
   strings: [
     "World Food",
     "Edmond Davari",
-    "dele mano mibari",
+    "Street Food",
     "motto",
-    "test test test tes",
+    "test test test test",
   ],
   typeSpeed: 70,
   backSpeed: 60,

@@ -44,10 +44,18 @@ body{
 .body-contact{
   background-image: url(/images/taco-svgrepo-com.svg);
   background-size: cover;
-  background-color: var(--orange-dark);
+  background-color: #DCEDC2;
   background-position: center;
 }
 
+#background-contact{
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
 
 
 /* -----navbar----- */
@@ -84,8 +92,8 @@ nav{
   content: "";
 }
 #burger-menu span {
-  right: 0px;
-  top: 13px;
+  right: 20px;
+  top: 1px;
   width: 27px;
 }
 #burger-menu span:before {
@@ -155,7 +163,8 @@ nav{
 #menu a{
   color:#fff;
   display:block;
-  font-size: 32px;
+  font-size: 52px;
+  font-weight: 900;
   margin-bottom:30px;
   text-decoration:none;
   transition: all .4s ease-in-out;
@@ -300,25 +309,25 @@ nav{
 .logo-container {
   display: flex;
 /*   border:1px solid red; */
-width: 100%;
+  width: 100%;
   align-items: center;
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translate(-50%,-50%);
   background: rgba(255, 255, 255, 0.06);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.6px);
--webkit-backdrop-filter: blur(3.6px);
-border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
 }
 
 svg {
     display: block;
     font: 10.5em 'Montserrat';
     width: 460px;
-    height: 200px;
+    height: 100px;
     margin: 0 auto;
 }
 
@@ -332,27 +341,27 @@ svg {
 }
 
 .text-copy:nth-child(1){
-	stroke: #DBC6EB;
+	stroke: #005691;
 	animation-delay: -1;
 }
 
 .text-copy:nth-child(2){
-	stroke: #05DFD7;
+	stroke: #005691;
 	animation-delay: -2s;
 }
 
 .text-copy:nth-child(3){
-	stroke: #FA26A0;
+	stroke: #F85F73;
 	animation-delay: -3s;
 }
 
 .text-copy:nth-child(4){
-	stroke: #F17808;
+	stroke: #155263;
 	animation-delay: -4s;
 }
 
 .text-copy:nth-child(5){
-	stroke: #14B1AB;
+	stroke: #D72323;
 	animation-delay: -5s;
 }
 
@@ -736,7 +745,7 @@ footer .footer-contact h3{
 }
 
 footer .footer-about h3{
-  color: #AB46D2;
+  color: #8AC4D0;
 }
 
 footer .footer-link h3{
@@ -744,7 +753,7 @@ footer .footer-link h3{
 }
 
 footer .footer-contact h3{
-  color: #77E4D4;
+  color: #F75A04;
 }
 
 
