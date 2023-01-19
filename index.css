@@ -138,7 +138,6 @@ nav{
   padding-top:20px;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-  
 }
 
 #menu.overlay{
@@ -150,10 +149,10 @@ nav{
 }
 
 .nav-links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #menu li{
@@ -213,34 +212,27 @@ nav{
 
 .drop-animation li:nth-child(5){
     left: 65%;
-
     animation-delay: 0s;
 }
 
 .drop-animation li:nth-child(6){
     left: 75%;
-
-  
     animation-delay: 3s;
 }
 
 .drop-animation li:nth-child(7){
     left: 35%;
-
-  
     animation-delay: 7s;
 }
 
 .drop-animation li:nth-child(8){
     left: 50%;
-
     animation-delay: 15s;
     animation-duration: 45s;
 }
 
 .drop-animation li:nth-child(9){
     left: 20%;
-
     animation-delay: 2s;
     animation-duration: 35s;
 }
@@ -937,9 +929,13 @@ footer .copyright p a:hover {
     }
 
 
-  footer{
-    margin: 5px 0;
-    text-align: center;
-  }
+    footer{
+      margin: 5px 0;
+      text-align: center;
+    }
+
+    #menu a{
+      font-size: 32px;
+    }
 
 }
