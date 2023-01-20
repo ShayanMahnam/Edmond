@@ -192,22 +192,22 @@ nav{
 }
 
 .drop-animation li:nth-child(1){
-    left: 45%;
+    left: 85%;
     animation-delay: 0s;
 }
 .drop-animation li:nth-child(2){
-    left: 35%;
+    left: 95%;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
 .drop-animation li:nth-child(3){
-    left: 25%;
+    left: 15%;
     animation-delay: 4s;
 }
 
 .drop-animation li:nth-child(4){
-    left: 50%;
+    left: 830%;
     animation-delay: 0s;
     animation-duration: 18s;
 }
@@ -219,7 +219,7 @@ nav{
 
 .drop-animation li:nth-child(6){
     left: 65%;
-    animation: animate2 25s linear 3s infinite;
+    animation: animate1 25s linear 3s infinite;
 }
 
 .drop-animation li:nth-child(7){
@@ -228,18 +228,18 @@ nav{
 }
 
 .drop-animation li:nth-child(8){
-    left: 50%;
-    animation: animate2 45s linear 15s infinite;
+    left: 26%;
+    animation: animate1 45s linear 15s infinite;
 }
 
 .drop-animation li:nth-child(9){
-    left: 60%;
-    animation: animate2 35s linear 6s infinite;
+    left: 20%;
+    animation: animate1 35s linear 6s infinite;
 }
 
 .drop-animation li:nth-child(10){
-    left: 40%;
-    animation: animate2 11s linear 0s infinite;
+    left: 10%;
+    animation: animate1 11s linear 0s infinite;
 }
 
 @keyframes animate1 {
@@ -251,36 +251,14 @@ nav{
     }
 
 
-    50%{
-      transform: translateY(-500px) translateX(300px) rotate(400deg);
-    }
 
     100%{
-        transform: translateY(500px) translateX(500px)  rotate(400deg);
+        transform: translateY(-1000px) rotate(400deg);
         opacity: 0;
         border-radius: 50%;
     }
   }
-@keyframes animate2 {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-
-    50%{
-      transform: translateY(-500px) translateX(-300px) rotate(400deg);
-    }
-
-    100%{
-        transform: translateY(500px) translateX(-500px)  rotate(400deg);
-        opacity: 0;
-        border-radius: 50%;
-    }    
-
-}
+  
 /* ----------top-contact-------- */
 
 .top-contact {
@@ -855,44 +833,4 @@ footer .copyright p a:hover {
     .text-title {
       font-size: 3em;
     }
-
-@keyframes animate1 {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-
-    50%{
-      transform: translateY(-500px) translateX(100px) rotate(400deg);
-    }
-
-    100%{
-        transform: translateY(500px) translateX(200px)  rotate(400deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-  }
-@keyframes animate2 {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-
-    50%{
-      transform: translateY(-500px) translateX(-100px) rotate(400deg);
-    }
-
-    100%{
-        transform: translateY(500px) translateX(-200px)  rotate(400deg);
-        opacity: 0;
-        border-radius: 50%;
-    }    
-
-}
 }
