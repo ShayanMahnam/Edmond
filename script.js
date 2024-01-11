@@ -40,22 +40,4 @@ function scrollFunction() {
   }
 }
 
-let edPic = document.getElementById("edPic");
-let motto = document.getElementById("motto");
-const mottoArray = ["First Motto", "Second Motto", "Third Motto", "N Motto"];
 
-// edPic.addEventListener("click", ()=>{
-//   // let index = Math.floor(Math.random() * (mottoArray.length - 1))
-//   for (let i = 0; i < mottoArray.length; i++) {
-//     motto.innerText = mottoArray[i];
-//   }
-// })
-
-let currentIndex = 0;
-edPic.addEventListener("click", () => {
-  motto.innerText = mottoArray[currentIndex];
-  currentIndex++;
-  if (currentIndex >= mottoArray.length) {
-    currentIndex = 0;
-  }
-});

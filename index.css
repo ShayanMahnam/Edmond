@@ -27,6 +27,11 @@
   --darkslategray: #2f4f4f;
   --slategray: #708090;
   --gray-very-light: #fbf7f3;
+  --yellow-s: #ffbe06;
+--red-s: #8b1a06;
+--orange-s: #e04b09;
+--purple-light-s: #dea2e2;
+--purple-dark-s: #863186;
 }
 
 * {
@@ -51,7 +56,7 @@ body{
 }
 
 #background-contact{
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.258);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.6px);
@@ -288,12 +293,12 @@ nav{
 
 .top-contact-links{
   font-size: 40px;
-  color: #2FC4B2;
+  color: var(--yellow-s);
   transition: all .4s ease-in-out;
 }
 
 .top-contact-links:hover{
-  color: #4D163D;
+  color: var(--purple-dark-s);
 		}
 /* -----------logo----------- */
 
@@ -306,12 +311,21 @@ nav{
   top: 50px;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(47, 47, 47, 0.323);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.6px);
   -webkit-backdrop-filter: blur(3.6px);
   border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%,-20%);
 }
 
 svg {
@@ -390,7 +404,7 @@ svg {
     overflow: hidden;
     max-width: 7em;
     white-space: nowrap;
-    color: var(--orange-dark);
+    color: var(--purple-light-s);
     animation: loading 5s linear infinite;
 }
 
@@ -410,18 +424,18 @@ svg {
 
 
 .one-back {
-  background-image: url(/images/9.webp);
+  background-image: url(/images/market.jpg);
   /* margin-top: 100px; */
   height: 900px;
 }
 
 .two-back {
-  background-image: url(/images/20.webp);
+  background-image: url(/images/falafelwrap.jpg);
   height: 700px;
 }
 
 .three-back{
-  background-image: url(/images/8.webp);
+  background-image: url(/images/chickenwrap.jpg);
   height: 700px;
 }
 
@@ -438,15 +452,15 @@ padding: 2rem;
 }
 
 .one-container {
-  background-color: var(--yellow);
+  background-color: var(--yellow-s);
 }
 
 .two-container {
-  background-color: var(--yellow-green);
+  background-color: var(--purple-dark-s);
 }
 
 .three-container {
-  background-color: var(--green-blue);
+  background-color: var(--red-s);
 }
 
 .text-wrapper {
@@ -576,7 +590,7 @@ padding: 2rem;
   display: block;
 }
 .fish {
-background-image: url(/images/fish-svgrepo-com.svg);
+background-image: url(/images/falafel-svgrepo-com.svg);
 transform: translateY(50px);
 }
 .chicken{

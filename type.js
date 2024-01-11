@@ -2,11 +2,10 @@
 
 var typed = new Typed(".input", {
   strings: [
-    "World Food",
-    "Edmond Davari",
+    "Saffron Hill Food",
+    "Taste The Tradition",
     "Street Food",
-    "motto",
-    "test test test test",
+    "Delicious Persian Food"
   ],
   typeSpeed: 70,
   backSpeed: 60,
