@@ -397,6 +397,9 @@ svg {
     color: rgba(0, 0, 0, .3);
     font-size: 8em;
     font-family: 'Anton', sans-serif;
+    background-color: #67676790;
+    padding: 3rem;
+    border-radius: 20px;
 }
 .text-title:before {
     content: attr(data-text);
