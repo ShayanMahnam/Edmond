@@ -938,7 +938,7 @@ footer .copyright p a:hover {
   background-image: url('./images/105.JPG');
 }
 /* Overlay styles */
-.overlay {
+.overlays {
   position: absolute;
   top: 0;
   left: 0;
@@ -954,7 +954,7 @@ footer .copyright p a:hover {
   border-radius: 25px;
 }
 
-.menu-pic:hover .overlay {
+.menu-pic:hover .overlays {
   opacity: 1;
 }
 
@@ -1067,7 +1067,7 @@ footer .copyright p a:hover {
     opacity: 1;
   }
 
-  .menu-pic:hover .overlay {
+  .menu-pic:hover .overlays {
     opacity: 1;
   }
 
