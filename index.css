@@ -920,6 +920,7 @@ footer .copyright p a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 25px;
 }
 .pic1 {
   background-image: url('./images/104.JPG');
@@ -950,6 +951,7 @@ footer .copyright p a:hover {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 25px;
 }
 
 .menu-pic:hover .overlay {
